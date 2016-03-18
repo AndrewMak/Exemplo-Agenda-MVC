@@ -1,4 +1,8 @@
-﻿using SimpleInjector;
+﻿using ExemploAgenda.Domain.Interface.Repository;
+using ExemploAgenda.Domain.Interface.Service;
+using ExemploAgenda.Domain.Service;
+using ExemploAgenda.Infra.Repository;
+using SimpleInjector;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -54,6 +54,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExemploAgenda.Domain\ExemploAgenda.Domain.csproj">
+      <Project>{43cbfd59-06c7-4c64-b415-01f2ce3dcf18}</Project>
+      <Name>ExemploAgenda.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExemploAgenda.Infra\ExemploAgenda.Infra.csproj">
+      <Project>{bfd9353c-fb06-4a5d-a680-449b91bb7508}</Project>
+      <Name>ExemploAgenda.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
