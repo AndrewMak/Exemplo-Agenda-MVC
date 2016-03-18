@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExemploAgenda.IOC;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,8 @@ namespace ExemploAgenda
     {
         protected void Application_Start()
         {
+
+            DependencyResolver.SetResolver(SimpleInjectorContainer.RegisterServices());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
